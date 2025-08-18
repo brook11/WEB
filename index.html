@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>展榮印刷｜專業平價印刷官方網站</title>
+  <meta name="description" content="展榮印刷：傳統印刷，價格實惠，專做手冊、名片、傳單/DM、產品貼紙。長期合作享企業優惠，速度快，可大量客製特殊紙張。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --brand:#d62828;
+      --brand-2:#f77f00;
+      --accent:#fcbf49;
+      --text:#1a1a1a;
+      --muted:#555;
+      --card:#fffdf8;
+      --stroke:#e0e0e0;
+      --radius:16px;
+      --max:1200px;
+    }
+    *{box-sizing:border-box;transition:all .3s ease}
+    body{margin:0; font-family:'Inter','Noto Sans TC',sans-serif; background:var(--bg); color:var(--text); line-height:1.6}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:auto; padding:0 20px}
+    header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--stroke); box-shadow:0 2px 6px rgba(0,0,0,.05); z-index:50}
+    .nav{display:flex; justify-content:space-between; align-items:center; padding:12px 0}
+    .logo{font-weight:900; font-size:22px; color:var(--brand)}
+    nav ul{display:flex; gap:24px; list-style:none; margin:0; padding:0}
+    nav a{color:var(--muted); font-weight:600; position:relative}
+    nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--brand);transition:.3s}
+    nav a:hover{color:var(--brand)}
+    nav a:hover::after{width:100%}
+    .hero{padding:100px 20px; text-align:center; background:linear-gradient(135deg,#fff7f7,#fffef9,#f9f9ff); animation:fadeIn 1s ease}
+    .hero h1{font-size:clamp(32px,5vw,56px); margin-bottom:16px; color:var(--brand)}
+    .hero p{max-width:720px; margin:auto; color:var(--muted); font-size:18px}
+    .btn{display:inline-block; padding:14px 24px; border-radius:50px; font-weight:700; margin:20px 10px 0; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.2)}
+    section{padding:80px 0; position:relative}
+    .section-title{text-align:center; font-size:34px; margin-bottom:14px; color:var(--brand)}
+    .section-sub{text-align:center; color:var(--muted); margin-bottom:50px}
+    .grid{display:grid; gap:24px}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    .card{background:var(--card); border:1px solid var(--stroke); border-radius:var(--radius); padding:30px 20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,.05)}
+    .card:hover{transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,.1)}
+    .card h3{margin:10px 0; color:var(--brand-2)}
+    .card p{color:var(--muted)}
+    .contact{display:grid; gap:20px; grid-template-columns:1fr; text-align:center; background:linear-gradient(135deg,#fff,#fffaf0); border-radius:var(--radius); padding:30px; box-shadow:0 4px 12px rgba(0,0,0,.05)}
+    footer{text-align:center; padding:20px; border-top:1px solid var(--stroke); color:var(--muted); background:#fafafa}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:900px){.grid.cols-4{grid-template-columns:1fr 1fr}} 
+    @media(max-width:600px){.grid.cols-4{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">展榮印刷</div>
+      <nav>
+        <ul>
+          <li><a href="#services">服務</a></li>
+          <li><a href="#about">關於我們</a></li>
+          <li><a href="#contact">聯絡</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>傳統印刷，平價快速，值得信賴</h1>
+    <p>展榮印刷提供傳統印刷服務：手冊、名片、傳單、DM、產品貼紙。價格實惠，速度快，支援大量客製紙張與特殊需求。長期合作更享有企業優惠價格。</p>
+    <a href="#contact" class="btn">立即聯繫</a>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">服務項目</h2>
+    <p class="section-sub">從基礎到客製，滿足您的印刷需求</p>
+    <div class="container grid cols-4">
+      <div class="card">
+        <h3>手冊/型錄</h3>
+        <p>各式裝訂與紙材選擇，適合產品與公司介紹。</p>
+      </div>
+      <div class="card">
+        <h3>名片</h3>
+        <p>高品質名片，支援特殊工藝，價格親民。</p>
+      </div>
+      <div class="card">
+        <h3>傳單/DM</h3>
+        <p>促銷必備，數量越多價格越划算。</p>
+      </div>
+      <div class="card">
+        <h3>產品貼紙</h3>
+        <p>多樣材質與刀模選擇，支援大量製作。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">關於我們</h2>
+    <p class="section-sub">展榮印刷以傳統印刷為基礎，提供快速、平價的解決方案。特別歡迎企業長期合作，我們提供更具競爭力的報價，並可依大量需求客製紙張與工藝。</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">聯絡我們</h2>
+    <div class="container contact">
+      <div>
+        <p>📍 地址：新北市三重區龍門路100號</p>
+        <p>☎️ 電話：<a href="tel:+886229732345">(02)2973-2345</a></p>
+        <p>📱 LINE：<a href="https://line.me/ti/p/~0911354342" target="_blank">0911354342</a></p>
+        <p>服務時間：週一至週五 09:00–18:00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="y"></span> 展榮印刷 · 平價快速的印刷夥伴</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
